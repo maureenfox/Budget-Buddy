@@ -14,6 +14,7 @@ static func saveItem(item: Item) async -> String? { // nil if effort failed, oth
                 print("😎 Data updated successfully!")
                 return id
             } catch {
+                
                 print("😡 Could not update data in 'items' \(error.localizedDescription)")
                 return id
             }
